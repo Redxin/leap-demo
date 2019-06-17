@@ -38,12 +38,21 @@
     </repositories>
 
     <dependencies>
-        <!-- leap -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>3.8.1</version>
+            <scope>test</scope>
+        </dependency>
         <dependency>
             <groupId>org.leapframework</groupId>
             <artifactId>leap</artifactId>
-            <version>${leap.version}</version>
+            <version>0.4.0b-SNAPSHOT</version>
             <type>pom</type>
         </dependency>
     </dependencies>
+
+    <build>
+        <finalName>leap-demo</finalName>
+    </build>
 </project>
